@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+	
+	<h:head>
+		<title>Student Registration Form</title>
+	</h:head>	
+	
+	<h:body>
+		<h:form>
+			First name: <h:inputText id="firstName" value="#{student.firstName}" />
+				<br/><br/>
+			Last name: <h:inputText id="lastName" value="#{student.lastName}"/>
+				<br/><br/>
+			Country: 	<h:selectOneMenu value="#{studentTwo.country}">
+							<h:selectItem itemValue="Brazil" itemLabel="Brazil" />
+							<h:selectItem itemValue="France" itemLabel="France" />
+							<h:selectItem itemValue="Germany" itemLabel="Germany" />
+							<h:selectItem itemValue="India" itemLabel="India" />
+							<h:selectItem itemValue="Turkey" itemLabel="Turkey" />
+							<h:selectItem itemValue="United States" itemLabel="United States" />
+							
+						</h:selectOneMenu>
+			<h:commandButton value="Submit" action="student_response"/>
+		</h:form>
+	</h:body>
+	
+	</html>
+	
