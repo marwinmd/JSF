@@ -13,7 +13,7 @@
 				<br/><br/>
 			Last name: <h:inputText id="lastName" value="#{student.lastName}"/>
 				<br/><br/>
-			<h:commandButton value="Submit" action="student_response"/>
+			<h:commandButton value="Submit" action:"student_response"/>
 		</h:form>
 	</h:body>
 	
