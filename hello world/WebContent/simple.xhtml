@@ -16,7 +16,7 @@
 				<br/><br/>
 			Last name: <h:inputText id="lastName" value="#{student.lastName}"/>
 				<br/><br/>
-			Country: 	<h:selectOneMenu value="#{studentTwo.country}">
+		<!--Country: 	<h:selectOneMenu value="#{studentTwo.country}">
 							<f:selectItem itemValue="Brazil" itemLabel="Brazil" />
 							<f:selectItem itemValue="France" itemLabel="France" />
 							<f:selectItem itemValue="Germany" itemLabel="Germany" />
@@ -25,7 +25,14 @@
 							<f:selectItem itemValue="United States" itemLabel="United States" />
 							
 						</h:selectOneMenu>
-						<br/><br/>
+						<br/><br/>  -->	
+						
+			Country: <h:selectOneRadio value="#{studentTwo.country}">
+				<f:selectItems value="#{studentTwo.countryOptions}" /> 
+			</h:selectOneRadio>
+						
+						
+			<br/><br/>			
 			<h:commandButton value="Submit" action="student_two_response"/>
 		</h:form>
 	</h:body>

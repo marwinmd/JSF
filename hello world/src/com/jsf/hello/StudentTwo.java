@@ -1,5 +1,7 @@
 package com.jsf.hello;
 
+import java.util.ArrayList;
+
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
@@ -8,11 +10,24 @@ public class StudentTwo {
 	private String lastName;
 	private String country;
 
+	ArrayList<String> countryOptions;
+
 	// create no-arg constructor
 	public StudentTwo() {
+		countryOptions = new ArrayList<String>();
+		countryOptions.add("Brazil");
+		countryOptions.add("France");
+		countryOptions.add("Germany");
+		countryOptions.add("India");
+		countryOptions.add("Turkey");
+		countryOptions.add("United States");
 	}
 
 	// define getter/setter methods
+
+	public ArrayList<String> getCountryOptions() {
+		return countryOptions;
+	}
 
 	public String getFirstName() {
 		return firstName;
