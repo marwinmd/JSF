@@ -12,9 +12,7 @@
 		<br/><br/>
 		The students country: 
 			<ul>
-				<ui:repeat value="#{studentTwo.country}" var="tempCountry" >		
-					<li> #{tempCountry} </li>
-				</ui:repeat>
+				<ui:repeat value="#{studentTwo.country}" var="tempCountry" >			<li> #{tempCountry} </li></ui:repeat>
 	
 			</ul>
 		

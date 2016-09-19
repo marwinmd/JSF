@@ -27,9 +27,9 @@
 						</h:selectOneMenu>
 						<br/><br/>  -->	
 						
-			Country: <h:selectManyCheckbox value="#{studentTwo.country}">
+			Country: <h:selectOneRadio value="#{studentTwo.country}">
 				<f:selectItems value="#{studentTwo.countryOptions}" /> 
-			</h:selectManyCheckbox>
+			</h:selectOneRadio>
 						
 						
 			<br/><br/>			

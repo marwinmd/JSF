@@ -1,7 +1,6 @@
 package com.jsf.hello;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 
@@ -9,7 +8,7 @@ import javax.faces.bean.ManagedBean;
 public class StudentTwo {
 	private String firstName;
 	private String lastName;
-	private List<String> country;
+	private String country;
 
 	ArrayList<String> countryOptions;
 
@@ -46,11 +45,11 @@ public class StudentTwo {
 		this.lastName = lastName;
 	}
 
-	public List<String> getCountry() {
+	public String getCountry() {
 		return country;
 	}
 
-	public void setCountry(List<String> country) {
+	public void setCountry(String country) {
 		this.country = country;
 	}
 }

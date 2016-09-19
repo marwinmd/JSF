@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html	lang="en"
 	xmlns="http://w3.org/1999/xhtml"
-	xmlns:h="http://xmlns.jcp.org/jsf/html"
-		xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
 
 	<h:head>
 		<title>Student Confirmation</title>
@@ -12,10 +11,7 @@
 		<br/><br/>
 		The students country: 
 			<ul>
-				<ui:repeat value="#{studentTwo.country}" var="tempCountry" >		
-					<li> #{tempCountry} </li>
-				</ui:repeat>
-	
+				<ui:repeat value="#{studentTwo.country}" var="tempCountry" ></ui:repeat>
 			</ul>
 		
  	</h:body>
